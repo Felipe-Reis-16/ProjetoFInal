@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Carros</title>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><img src="img/icon.png" alt="Carro" style="width: 40px; vertical-align: middle;"> Cadastro de Carros</h1>
+    <form id="carForm">
+      <label for="marca">Marca/Modelo:</label>
+      <input type="text" id="marca" placeholder="Ex: Toyota Corolla" required>
+
+      <label for="cor">Cor:</label>
+      <input type="text" id="cor" placeholder="Ex: Vermelho" required>
+
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" placeholder="Ex: ABC-1234" required>
+
+      <button type="button" id="addCar">Cadastrar</button>
+      <button type="button" id="showTable">Visualizar Tabela</button>
+      <button type="button" id="clearData">Deletar Dados</button>
+      <button type="button" id="closeWindow">Fechar a pagina</button>
+    </form>
+
+    <div id="tableContainer" style="display: none;">
+      <h2>Tabela de Carros</h2>
+      <table id="carTable">
+        <thead>
+          <tr>
+            <th>Marca/Modelo</th>
+            <th>Cor</th>
+            <th>Placa</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <footer style="text-align: center; margin-top: 20px; font-size: 14px; color: #fff; background: rgba(0, 0, 0, 0.8); padding: 10px; border-radius: 8px;">
+    🚗 Desenvolvido para amantes de carros 🚘
+  </footer>  
+  <script src="script.js"></script>
+</body>
+</html>
